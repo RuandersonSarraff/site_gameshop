@@ -1,0 +1,139 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/*google fonts para adicionar fontes diferentes*/
+header,
+section h2,
+section h3{ 
+    font-family: "Bungee", cursive;
+    font-weight: normal;
+}
+body, input, textarea {
+    font-family: "Rboto", sans-serif;      
+}
+
+/* estilizando o cabecalho*/
+header{
+    padding: 16px 0;
+    background-color: #182c61;
+    color: #ecf0f1;
+}
+/*head h1, /*Diminuir a expressura dos titulos h1, h2, h3*/
+/*section h2 {
+    font-weight: normal;
+} 
+
+/*estilizando o menu, colocando lado a lado*/
+header nav li{
+    display: inline;
+    margin-left: 16px;
+    color: #ecf0f1;
+    font-size: 16px;
+}
+header nav li a{
+    color: #ecf0f1;
+    text-decoration: none;/*remove os indelainer dos links*/
+}
+/*Centralizando o conteudo da pg*/
+.container {
+    max-width: 1280px;
+    width: 100%;
+    margin: 0 auto;
+}
+/*menu sobre a loja e contato, ficando ao lado do titulo*/
+header .container,
+section .container{
+    display: flex;
+    align-items: center;/*centraliza o texto*/
+    justify-content: space-between;/*sobre a loja e contato vai fiar do LD*/
+}
+/*editando logos das marcas*/
+.brands-list img{
+    height: 24px;
+}
+.brands-list li {
+    display: inline; /*imagens lado a lado*/
+    margin-right: 8px; /*espacamento entres a logos*/
+}
+
+section .container{
+    align-items: self-start;/*vai sobre escrever o section .container (align-items:center)*/
+}
+
+section {
+    padding: 24px 0;/*espacamento do top da imagem da loja*/
+
+}
+section h2{
+    margin-bottom: 16px;/*espacamento do sobre a loja e o paragráfo*/
+}
+
+section{ /*alterando a cor do textos*/
+    color: #182c61;
+}
+
+section p{
+    margin-bottom: 8px;/*espacamento entre os paragrafos*/
+}
+.store-front{
+    margin-right: 32px;/* espacamento entre imagem da loja e texto, sem alterar as logos de games*/
+}
+
+/*Cuidando das imagens, vai alinhar as imagens uma em baixo da outra*/
+.social-links img {
+    height: 24px;
+}
+.social-links li {
+    display: inline;
+margin-right: 8px;
+} /*faz as logos ficarem lado a lado*/
+.social-links li a {
+    text-decoration: none; /*irá remover a sujeira da imaggem do text-area*/
+}
+
+#contact .container{
+    display: block;
+}
+.contact-methods {
+    display: flex;
+    justify-content: space-between; /*espacamento entre as secões*/
+}
+
+form input, /*caixa de formulario em baixo do outro*/
+textarea,
+form button {
+    display: block;
+    width: 320px; /*largura*/
+    margin-bottom: 8px;
+    padding: 8px;
+}
+form textarea{
+    resize: none;
+    height: 180px;
+}
+
+section h3{
+    margin-bottom: 16px;
+}
+/* adicionando cor no formulário*/
+
+form button {
+    background-color: #182c61;
+    color: #ecf0f1;
+    border: none;
+    cursor: pointer; /*informa que o butao é para clicar*/
+}
+
+form button:hover{
+    background-color:  #6a83c9; /*muda a cor do butao com o mouse em cima*/
+}
+input:focus, textare:focus{
+    outline:  #182c61;
+}
+footer {  /*configurando o roda pé*/
+    background: #4c64ac;
+    color: #ced0d5;
+    padding: 16px;
+}
